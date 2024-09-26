@@ -9,6 +9,11 @@ def home(request):
         'name': 'Luiz Otávio',
     })
 
+def recipe(request, id):
+    return render(request, 'recipes/pages/home.html', context={
+        'name': 'Luiz Otávio',
+    })
+
 
 '''def sobre(request):
     return render(request, 'temp/temp.html')
